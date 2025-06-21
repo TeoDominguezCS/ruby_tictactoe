@@ -1,12 +1,10 @@
 class Player
   # setter/getters
-  attr_accessor :name, :piece
+  attr_accessor :name, :piece, :moves
   # constructor
-  def initialize(name)
+  def initialize(name, piece)
     self.name = name
     self.piece = piece
+    self.moves = Array.new(5)
   end
-
-  
-
 end
